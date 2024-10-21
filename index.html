@@ -17,8 +17,6 @@
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
 
-
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -115,109 +113,35 @@
   <link href="blog.css" rel="stylesheet">
 </head>
 
-<body>
-  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-    <symbol id="check2" viewBox="0 0 16 16">
-      <path
-        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
-    </symbol>
-    <symbol id="circle-half" viewBox="0 0 16 16">
-      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
-    </symbol>
-    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-      <path
-        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
-      <path
-        d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
-    </symbol>
-    <symbol id="sun-fill" viewBox="0 0 16 16">
-      <path
-        d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
-    </symbol>
-  </svg>
-
-  <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-    <li>
-      <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
-        aria-pressed="false">
-        <svg class="bi me-2 opacity-50" width="1em" height="1em">
-          <use href="#sun-fill"></use>
-        </svg>
-        Light
-        <svg class="bi ms-auto d-none" width="1em" height="1em">
-          <use href="#check2"></use>
-        </svg>
-      </button>
-    </li>
-    <li>
-      <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
-        aria-pressed="false">
-        <svg class="bi me-2 opacity-50" width="1em" height="1em">
-          <use href="#moon-stars-fill"></use>
-        </svg>
-        Dark
-        <svg class="bi ms-auto d-none" width="1em" height="1em">
-          <use href="#check2"></use>
-        </svg>
-      </button>
-    </li>
-    <li>
-      <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
-        aria-pressed="true">
-        <svg class="bi me-2 opacity-50" width="1em" height="1em">
-          <use href="#circle-half"></use>
-        </svg>
-        Auto
-        <svg class="bi ms-auto d-none" width="1em" height="1em">
-          <use href="#check2"></use>
-        </svg>
-      </button>
-    </li>
-  </ul>
-  </div>
-
-  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-    <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-      stroke-width="2" viewBox="0 0 24 24">
-      <circle cx="12" cy="12" r="10" />
-      <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
-    </symbol>
-    <symbol id="cart" viewBox="0 0 16 16">
-      <path
-        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-    </symbol>
-    <symbol id="chevron-right" viewBox="0 0 16 16">
-      <path fill-rule="evenodd"
-        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-    </symbol>
-  </svg>
-
-  <div class="container">
-    <header class="border-bottom lh-1 py-3">
-      <div class="row flex-nowrap justify-content-between align-items-center">
-
-        <div class="container text-center">
-          <img src="./assets/Logotipo.png" alt="Guabina">
-        </div>
-
-      </div>
-    </header>
-
-    <div class="nav-scroller py-1 mb-3 border-bottom fixed-top bg-white" >
-      <nav class="nav nav-underline justify-content-between">
-        <a class="nav-item nav-link link-body-emphasis" href="#Región">Región</a>
-        <a class="nav-item nav-link link-body-emphasis" href="#Historias">Historias</a>
-        <a class="nav-item nav-link link-body-emphasis" href="#Características">Características</a>
-      </nav>
+<header class="border-bottom lh-1 py-3">
+  <div class="justify-content-center align-items-center">
+    <div class="container text-center">
+      <img src="./assets/Logotipo.png" alt="Guabina" style="height: 100%;">
     </div>
   </div>
+</header>
 
+
+<header class="site-header sticky-top py-1">
+  <ul class="nav justify-content-center nav-underline">
+    <li class="nav-item ">
+      <a class="nav-link" href="#Región">Región</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#Historias">Historias</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#Características">Características</a>
+    </li>
+  </ul>
+</header>
+
+<body>
   <main class="container">
     <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
       <div class="col-lg-6 px-0">
         <h1 class="display-4">Mujeres de día y Brujas de noche</h1>
-        <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently
-          about what’s most interesting in this post’s contents.</p>
+        <p class="lead my-3">Vecinas encantadoras y bellas que al caer la luz del sol se convierten y revelan su verdadera naturaleza.</p>
           <p class="mb-0" style="color: white;">
             <a class="texto-blanco text-body-emphasis" href="#ArticuloBrujas">Continuar leyendo...</a>
         </p>
@@ -235,7 +159,7 @@
               additional content.</p>
           </div>
           <div class="col-auto d-none d-lg-block">
-            <img src="./assets/Imagen.png" alt="El silbador" width="200" height="250" 
+            <img src="./assets/Silbador.jpg" alt="El silbador" width="200" height="250" 
             class="bd-placeholder-img" style="object-fit: cover;">
           </div>
         </div>
@@ -246,11 +170,10 @@
             
             <h3 class="mb-0"><a class="link-body-emphasis text-decoration-none" href="#Tunjo">Tunjitos ¿bebés inofensivos?</a></h3>
             <div class="mb-1 text-body-secondary">Oct 19</div>
-            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional
-              content.</p>
+            <p class="mb-auto">El bebé de oro que aterroriza pero puede cambiar tu destino.</p>
           </div>
           <div class="col-auto d-none d-lg-block">
-            <img src="./assets/Imagen.png" alt="El silbador" width="200" height="250" 
+            <img src="./assets/Tunjo1.tif.jpg" alt="El Tunjo" width="200" height="250" 
             class="bd-placeholder-img" style="object-fit: cover;">
             </svg>
           </div>
@@ -266,10 +189,10 @@
 
       <div class="clearfix">
         <div>
-          <img src="./assets/Imagen.png" class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid hola" alt="Tolima" style="max-width: 100%; height: auto;" >
+          <img src="./assets/Tolima.jpg" class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid hola" alt="Tolima" style="max-width: 100%; height: auto;" >
         </div>
         <article class="blog-post">
-          <h2 class="display-5 link-body-emphasis mb-1">Tolima historias que perduran...</h2>
+          <h2 class="display-5  mb-1">Tolima historias que perduran...</h2>
           <p class="blog-post-meta">Por Dayana Arias</p>
         <p>
           A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
@@ -291,36 +214,38 @@
         </h3>
 
         <div class="card mb-3">
-          <img src="./assets/Imagen.png" class="card-img-top" alt="..." width="100%" height="200" style="object-fit: cover;">
+          <img src="./assets/Griton.jpg" class="card-img-top" alt="Griton" width="100%" height="300" style="object-fit: cover;">
           <div class="card-body">
             <h5 class="card-title">El gritón</h5>
             <p class="blog-post-meta">Por Luisa Cossio</p>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">Esta es la historia del gritón o el gritón de medianoche, un hombre hijo de una india quien fue expulsada de su tribu, esto porque la sorprendieron siendo poseída por el demonio en medio de la selva y gracias a esto, nació el gritón, un ser mitad hombre y mitad demonio. </p>
+            <p class="card-text">Su impresionante y terrorífico grito hace que los arboles se arranquen desde la raíz, a tal punto que también hace temblar la tierra y desbordar los arroyos. Atemoriza a quienes lo escuchan y estas personas al oír su grito, entran en varios días de fiebre. Si una persona lo escuchaba y también gritaba, este gritaba aun mas fuerte, hasta llegar al punto de dejarlo sordo. </p>
+            <p class="card-text">Otra de las versiones, es que era el alma en pena arriero, quien a la media noche gritaba desde un monte alto y los animales también eran sus víctimas, debido a que gritaba tan fuerte que los hacia confundir con su verdadero arriero.</p>
           </div>
         </div>
 
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col">
             <div class="card">
-              <img src="./assets/Imagen.png" class="card-img-top" alt="..." width="100%" height="200" style="object-fit: cover;">
+              <img src="./assets/Silbadoor.jpg" class="card-img-top" alt="..." width="100%" height="200" style="object-fit: cover;">
               <div class="card-body">
-                <h5 class="card-title" id="Silbador">El silbador</h5>
+                <h5 class="card-title" id="Silbador">El Silbador</h5>
                 <p class="blog-post-meta">Por Luisa Cossio</p>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Con su espantoso silbido, un espectro maligno conocido como el silbón o silbador, atemoriza a todo aquel que lo escucha, hay quienes lo describen como un hombre flaco, pero otros como si fuera un esqueleto alto y con sombrero. La leyenda cuenta que el silbón vaga hambriento buscando con quien desquitar su ira. </p>
+                <p class="card-text">Una de las versiones de su historia cuenta que fue un hombre que, al descubrir a su padre maltratando y aprovechándose de su esposa, se llenó de furia y terminó quitándole la vida. Horrorizado por lo ocurrido, el abuelo del joven lo ató a un árbol, lo torturó con latigazos, le echó alcohol en las heridas y, finalmente, lo soltó a los perros, no sin antes maldecirlo.</p>
+                <p>Desde entonces, se dice que el Silbón aparece por las noches, persiguiendo especialmente a borrachos y mujeriegos, a quienes castiga arrancándoles todos los huesos y guardándolos en su costal. Si escuchas su silbido cerca, no hay peligro, pero si lo oyes lejos, corre, porque cuanto más lejano suena, más cerca está de ti.</p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card">
-              <img src="./assets/Imagen.png" class="card-img-top" alt="..." width="100%" height="200" style="object-fit: cover;">
+              <img src="./assets/Sombreroon.jpg" class="card-img-top" alt="..." width="100%" height="200" style="object-fit: cover;">
               <div class="card-body">
                 <h5 class="card-title">El sombrerón</h5>
                 <p class="blog-post-meta">Por Luisa Cossio</p>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Con un rostro diabólico, vestido completamente de negro, con un sombrero gigante y siempre montado a caballo, El Sombrerón es un espectro conocido en varias regiones. La leyenda cuenta que fue un hombre viejo que vivió en diferentes pueblos, siempre vestido de negro, con un sombrero grande y montando un caballo del mismo color, que se confundía con la noche. Aunque en vida no hablaba ni hacía daño a nadie, su presencia sigue siendo sentida por muchos.</p>
+                <p class="card-text">Se dice que suele aparecer en las orillas de los caminos y, aunque ya ha muerto, quienes aseguran haberlo visto dicen que siempre va acompañado de dos enormes perros negros. Los viernes, El Sombrerón deambula por los departamentos de Antioquia, Huila y Tolima, especialmente en lugares solitarios donde se dedica a espantar.</p>
+                <p>Sus víctimas principales son mujeres, borrachos, peleadores, mujeriegos, jugadores y personas tramposas, pero su mayor placer es asustar a los trasnochadores que salen de fiesta.</p>
               </div>
             </div>
             </div>
@@ -333,7 +258,7 @@
         <div class="container text-center">
           <div class="row  " style="text-align: left; " >
             <div class="col-sm-8 ">
-            <img src="./assets/Imagen.png" class="hola"alt="" width="100%" height="325" style="object-fit: cover; margin-top: 10pt;" ></div>
+            <img src="./assets/Mohaan.jpg" class="hola"alt="Mohaan" width="100%" height="325" style="object-fit: cover; margin-top: 10pt;" ></div>
             <div class="col-sm-4" style="text-align: left; margin-top: 10pt; margin-bottom: 10pt;" >
             <h5 class="card-title">EL Mohán</h5>
             <p class="blog-post-meta">Por Isabela Montoya</p>
@@ -350,7 +275,7 @@
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
             <div class="col-sm" style="text-align: left; background-color: #f8e4d9; padding-bottom: 14px; ">
-              <img src="./assets/Imagen.png" class="hola"alt="" width="100%" height="200" style="object-fit: cover; margin-bottom: 14px; margin-top: 14px; "  >
+              <img src="./assets/Tunjoo.jpg" class="hola"alt="Tunjoo" width="100%" height="200" style="object-fit: cover; margin-bottom: 14px; margin-top: 14px; "  >
               <h5 class="card-title" id="Tunjo">El Tunjo</h5>
               <p class="blog-post-meta">Por Dayana Arias</p>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -383,7 +308,7 @@
           <div class="card-img-overlay">
           <h2 class="card-title" style="font-size: 46px;" id="ArticuloBrujas">Mujeres de día y Brujas de noche</h5>
           <p class="blog-post-meta fst-italic" style="color: white;">Artículo Principal</p>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text">Vecinas encantadoras y bellas que al caer la luz del sol se convierten y revelan su verdadera naturaleza.</p>
            </div>
         </div>
         <article class="blog-post" style="margin-top: 24px;">
@@ -472,7 +397,7 @@
     </div>
   </div>
 
-  <div class="container-fluid bg-custom text-white py-4 px-0">
+  <div class="container-fluid bg-custom text-white py-4  px-0">
     <div class="container">
         <h3 class="pb-4 mb-4 fst-italic border-bottom" id="Características">
             Características
@@ -519,7 +444,7 @@
         </div>
         
         <div class="container text-center">
-          <div class="row" style="margin-top: 24px; margin24px">
+          <div class="row" style="margin-top: 24px">
             <div class="col">
               <img src="./assets/Imagen.png" class="hola" alt="" width="100%" height="200" style="object-fit: cover;">
               <ul class="list-unstyled" style="text-align: left; margin-top: 10px;">
@@ -575,11 +500,11 @@
   </main>
 
   <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
-    <h3 class="pb-4 mb-4 fst-italic border-bottom" id="Características">
+    <h3 class="pb-4 mb-4 fst-italic border-bottom">
       <img src="./assets/Logotipo.png" alt="Logotipo">
   </h3>
     <p>Copyright © 2024 </p>
-    <p>By Isabela Montoya, Luisa Cossio y Dayana Arias</p>
+    <p>By Isabela Montoya, Luisa Cossio & Dayana Arias</p>
     <p class="mb-0">
       <a href="#">Back to top</a>
     </p>

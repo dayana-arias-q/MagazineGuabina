@@ -54,7 +54,7 @@ a.text-body-emphasis{
   margin-right: 0;
   width: 100vw; /* Asegura que ocupe todo el ancho de la ventana */
   position: relative; /* Permite que se posicione correctamente */
-  left: 50%; /* Ajusta la posición */
+  left: 49.1%; /* Ajusta la posición */
   right: 50%; /* Ajusta la posición */
   margin-left: -50vw; /* Mueve hacia la izquierda */
   margin-right: -50vw; /* Mueve hacia la derecha */
@@ -62,12 +62,35 @@ a.text-body-emphasis{
 }
 
 
-.hola {
-  border-radius: 6px; /* Ajusta el valor según el redondeo deseado */
+/* Cambiar el color de fondo del <ul> */
+.nav {
+  background-color: #221f44; /* Color de fondo personalizado */
+}
+
+.nav .nav-item {
+  margin-right: 40px; /* Añade un margen derecho de 20 píxeles entre los elementos */
+  margin-left: 40px;
+}
+
+/* Cambiar el color del texto de los enlaces */
+.nav .nav-link {
+  color: white; /* Color de la letra */
+}
+
+/* Cambiar el color del texto de los enlaces al pasar el ratón por encima */
+.nav .nav-link:hover {
+  color: #ec6721; /* Color al pasar el ratón (hover) */
+}
+
+nav.nav nav-underline justify-content-between {
+  padding-left: 30px;
+  padding-right: 30px;  
 }
 
 
-
+.hola {
+  border-radius: 6px; /* Ajusta el valor según el redondeo deseado */
+}
 
 .flex-auto {
   flex: 0 0 auto;
@@ -97,7 +120,3 @@ a.text-body-emphasis{
   color: #727272;
 }
 
-nav.nav nav-underline justify-content-between {
-  padding-left: 30px;
-  padding-right: 30px;  
-}

@@ -24,6 +24,14 @@ a.text-body-emphasis{
   font-weight: bold;
   color: white;
 }
+
+.btn-custom {
+  background-color: #1e1f41;
+  color: white; /* Cambia el color del texto si es necesario */
+  border: none; /* Opcional: elimina el borde */
+}
+
+
 .p-4.p-md-5.mb-4.rounded.text-body-emphasis.bg-body-secondary {
   background-color: #f0e6f6; /* Cambia el color de fondo */
   background-image: url(./assets/Titular.png); /* Ruta de la imagen de fondo */

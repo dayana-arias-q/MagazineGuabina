@@ -25,6 +25,22 @@ a.text-body-emphasis{
   color: white;
 }
 
+
+
+
+#Región::before,
+#Historias::before,
+#Características::before,
+#ArticuloBrujas::before,
+#Silbador::before,
+#Tunjo::before {
+  content: "";
+  display: block;
+  height: 70px; /* Ajusta este valor según la altura de tu header */
+  margin-top: -70px; /* Compensa el desplazamiento para que el contenido quede visible */
+  visibility: hidden;
+}
+
 .btn-custom {
   background-color: #1e1f41;
   color: white; /* Cambia el color del texto si es necesario */
